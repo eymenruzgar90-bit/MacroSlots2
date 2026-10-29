@@ -1,0 +1,23 @@
+name: Modu Derle (MacroSlots)
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Windows
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Modu derle
+        uses: geode-sdk/build-geode-mod@main
+        id: build
+
+      - name: .geode dosyasini sakla
+        uses: actions/upload-artifact@v7
+        with:
+          name: MacroSlots
+          path: ${{ steps.build.outputs.build-output }}
