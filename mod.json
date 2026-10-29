@@ -1,0 +1,15 @@
+{
+	"geode": "v5.0.0",
+	"gd": {
+		"win": "2.2091"
+	},
+	"id": "kanka.macroslo",
+	"name": "MacroSlots",
+	"version": "1.0.0",
+	"developer": "kanka",
+	"description": "Sag Shift ile acilan 9 slotlu replay botu. gdr2 macro yukle, 1-9 tuslariyla aktiflestir, 0 ile kapat.",
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	},
+	"tags": ["gameplay", "utility", "enhancement"]
+}
